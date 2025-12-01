@@ -26,7 +26,7 @@ let etaUser;
 
 //richiesta dati
 
-kmViaggio = parseFloat ( prompt("quanti km farai con il biglietto acquistato?"))
+kmViaggio = prompt("quanti km farai con il biglietto acquistato?")
 
 console.log(kmViaggio);
 
