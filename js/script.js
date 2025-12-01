@@ -17,11 +17,11 @@ const costoKm = 0.21;
 
 console.log(costoKm);
 
-let costoBiglietto;
+let costoBiglietto = 0;
 
-let kmViaggio;
+let kmViaggio = 0;
 
-let etaUser;
+let etaUser = 0;
 
 
 //richiesta dati
@@ -36,16 +36,20 @@ console.log(etaUser);
 
 // calcolo costo biglietto
 
+costoBiglietto = kmViaggio * costoKm;
+
 if (etaUser < 18) {
 
-    costoBiglietto = ((kmViaggio * costoKm) * 0.8)
+    costoBiglietto = (costoBiglietto * 0.8)
+
+    console.log(costoBiglietto.toFixed(2));
 
 } else if (etaUser > 65) {
-    costoBiglietto = ((kmViaggio * costoKm) * 0.6)
+    costoBiglietto = (costoBiglietto * 0.6)
+
+    console.log(costoBiglietto.toFixed(2));
 } else 
 
-
-    costoBiglietto = kmViaggio * costoKm;
 
 console.log(costoBiglietto.toFixed(2));
 
